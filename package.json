@@ -1,0 +1,27 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-sass": "^3.0.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "find-unused-css": "^0.7.0",
+    "gulp-check-unused-css": "^2.1.3",
+    "gulp-uncss": "^1.0.6",
+    "imagemin-cli": "^3.0.0",
+    "node-sass": "^4.1.1",
+    "postcss": "^5.2.8",
+    "postcss-discard-unused": "^2.2.3",
+    "scss-unused": "0.0.3",
+    "unused-selectors": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,85 @@
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+@include border-box-sizing;
+
+body {
+	background-color: black;
+	color: #fff;
+	@include container(100%);
+}
+section {
+	@include clearfix;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	&:hover {
+		color: red;
+	}
+}
+.center {
+	text-align: center;
+	i {
+		font-size: 44px;
+	}
+}
+header {
+	@include span(full);
+	background-color: #fff;
+	margin-top: 0;
+}
+ul {
+	height: 100px;
+}
+li.menu-item {
+	@include span(1 of 5);
+	list-style-type: none;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 100px;
+	vertical-align: middle;
+	a {
+		display: inline-block;
+		border-radius: 10px;
+		background-color: blue;
+		padding: 0 50px;
+		&:hover {
+			background-color: #000;
+		}
+	}
+}
+.box {
+	@include span(4);
+}
+aside {
+	@include span(5);
+}
+.sidebar {
+	@include span(2 last);
+	background: #fff;
+	height: 100%;
+	li {
+		list-style-type: none;
+	}
+}
+.gallery img {
+	@include span(4);
+	margin-bottom: 20px;
+}
+.verte {
+	cursor: pointer;
+	background-color: #fff;
+}
+.bleu {
+	background-color: blue;
+}
+.box li {
+	color: black;
+}
