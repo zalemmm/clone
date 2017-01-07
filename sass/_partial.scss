@@ -7,54 +7,73 @@ $susy: (
 );
 
 @include border-box-sizing;
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu');
+$base-font: 'Ubuntu', sans-serif;
 
 body {
-	background-color: red;
 	color: #fff;
+	background-color: red;
+
+  font-family: $base-font;
+  font-size: 1em;
+
 	@include container(100%);
 }
+
 section {
 	@include clearfix;
 }
 a {
-	color: #fff;
 	text-decoration: none;
+
+	color: #fff;
 	&:hover {
 		color: red;
 	}
 }
+
 .center {
 	text-align: center;
 	i {
 		font-size: 44px;
 	}
 }
+
 header {
-	@include span(full);
-	background-color: #fff;
 	margin-top: 0;
+
+	background-color: #fff;
+
+	@include span(full);
 }
 ul {
 	height: 100px;
 }
+
 li.menu-item {
-	@include span(1 of 5);
 	list-style-type: none;
-	font-size: 16px;
+
+	vertical-align: middle;
 	text-transform: uppercase;
+
+	font-size: 1.2rem;
 	font-weight: bold;
 	line-height: 100px;
-	vertical-align: middle;
+
+	@include span(1 of 5);
 	a {
 		display: inline-block;
-		border-radius: 10px;
-		background-color: blue;
+
 		padding: 0 50px;
+
+		border-radius: 30px;
+		background-color: red;
 		&:hover {
 			background-color: #000;
 		}
 	}
 }
+
 .box {
 	@include span(4);
 }
@@ -62,24 +81,40 @@ aside {
 	@include span(5);
 }
 .sidebar {
-	@include span(2 last);
-	background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
 	height: 100%;
+
+	background: #fff;
+
+	@include span(2 last);
 	li {
 		list-style-type: none;
 	}
 }
+
 .gallery img {
-	@include span(4);
 	margin-bottom: 20px;
+
+	@include span(4);
 }
+
 .verte {
 	cursor: pointer;
+
 	background-color: #fff;
 }
+
 .bleu {
 	background-color: blue;
 }
+
 .box li {
 	color: black;
+}
+
+footer{
+  @include span(full);
 }

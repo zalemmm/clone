@@ -1,102 +1,166 @@
 /* Screen*/
 /* ======*/
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu");
+/* line 21, sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
+/* line 13, sass/_partial.scss */
 body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
   background-color: red;
   color: #fff;
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
-  body:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  margin-right: auto;
+}
 
+/* line 12, sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 20, bourbon/addons/_clearfix.scss */
 section::after {
   clear: both;
   content: "";
-  display: table; }
+  display: table;
+}
 
+/* line 23, sass/_partial.scss */
 a {
   color: #fff;
-  text-decoration: none; }
-  a:hover {
-    color: red; }
+  text-decoration: none;
+}
 
+/* line 26, sass/_partial.scss */
+a:hover {
+  color: red;
+}
+
+/* line 30, sass/_partial.scss */
 .center {
-  text-align: center; }
-  .center i {
-    font-size: 44px; }
+  text-align: center;
+}
 
+/* line 32, sass/_partial.scss */
+.center i {
+  font-size: 44px;
+}
+
+/* line 36, sass/_partial.scss */
 header {
   width: 100%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   background-color: #fff;
-  margin-top: 0; }
+  margin-top: 0;
+}
 
+/* line 41, sass/_partial.scss */
 ul {
-  height: 100px; }
+  height: 100px;
+}
 
+/* line 44, sass/_partial.scss */
 li.menu-item {
   width: 20%;
   float: left;
   padding-left: 2%;
   padding-right: 2%;
   list-style-type: none;
-  font-size: 16px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 100px;
-  vertical-align: middle; }
-  li.menu-item a {
-    display: inline-block;
-    border-radius: 10px;
-    background-color: blue;
-    padding: 0 50px; }
-    li.menu-item a:hover {
-      background-color: #000; }
+  vertical-align: middle;
+}
 
+/* line 52, sass/_partial.scss */
+li.menu-item a {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: red;
+  padding: 0 50px;
+}
+
+/* line 57, sass/_partial.scss */
+li.menu-item a:hover {
+  background-color: #000;
+}
+
+/* line 62, sass/_partial.scss */
 .box {
   width: 33.33333%;
   float: left;
   padding-left: 0.83333%;
-  padding-right: 0.83333%; }
+  padding-right: 0.83333%;
+}
 
+/* line 65, sass/_partial.scss */
 aside {
   width: 41.66667%;
   float: left;
   padding-left: 0.83333%;
-  padding-right: 0.83333%; }
+  padding-right: 0.83333%;
+}
 
+/* line 68, sass/_partial.scss */
 .sidebar {
   width: 16.66667%;
   float: right;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   background: #fff;
-  height: 100%; }
-  .sidebar li {
-    list-style-type: none; }
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
+/* line 75, sass/_partial.scss */
+.sidebar li {
+  list-style-type: none;
+}
+
+/* line 79, sass/_partial.scss */
 .gallery img {
   width: 33.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
+/* line 83, sass/_partial.scss */
 .verte {
   cursor: pointer;
-  background-color: #fff; }
+  background-color: #fff;
+}
 
+/* line 87, sass/_partial.scss */
 .bleu {
-  background-color: blue; }
+  background-color: blue;
+}
 
+/* line 90, sass/_partial.scss */
 .box li {
-  color: black; }
+  color: black;
+}
+
+/* line 93, sass/_partial.scss */
+footer {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

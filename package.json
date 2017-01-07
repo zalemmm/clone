@@ -15,7 +15,15 @@
     "postcss": "^5.2.8",
     "postcss-discard-unused": "^2.2.3",
     "scss-unused": "0.0.3",
-    "unused-selectors": "^1.0.0"
+    "unused-selectors": "^1.0.0",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-imagemin": "^3.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
