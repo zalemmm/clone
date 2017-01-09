@@ -1,3 +1,10 @@
+@mixin clear {
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
 
 body {
   font-family: $base-font;
@@ -9,7 +16,7 @@ body {
 }
 
 section {
-  @include clearfix;
+  @include clear;
 }
 a {
   color: #fff;
@@ -18,11 +25,14 @@ a {
     color: red;
   }
 }
-
+h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
 .center {
   text-align: center;
   i {
-    font-size: 44px;
+    font-size: 5rem;
   }
 }
 
@@ -52,6 +62,8 @@ li.menu-item {
     border-radius: 30px;
     &:hover {
       background-color: #000;
+      -webkit-transition: all ease-in 2s;
+              transition: all ease-in 2s;
     }
   }
 }

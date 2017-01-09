@@ -7,7 +7,8 @@ var browserSync = require( 'browser-sync' ).create();
 
 // Paths
 
-var susy = './node_modules/susy/sass';
+var susy    = './node_modules/susy/sass';
+var bourbon = './node_modules/bourbon/app/assets/stylesheets';
 
 // Start browserSync & watch css & html changes
 
@@ -23,7 +24,7 @@ gulp.task( 'sass', function() {
     return gulp.src( './sass/**/*.scss' )
         .pipe( sourcemaps.init() )
         .pipe( sass({
-            includePaths: [susy],
+            includePaths: [susy, bourbon],
             sourceComments: true,
             outputStyle: 'expanded'
         }).on( 'error', sass.logError ) )

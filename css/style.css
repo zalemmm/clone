@@ -1,13 +1,17 @@
-/* ==========================================================================*/
-/**/
-/* ==========================================================================*/
 @import url("https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu");
-/* line 5, sass/_partial.scss */
+/* line 21, node_modules/susy/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, sass/_partial.scss */
 body {
-  color: white;
-  background-color: #537961;
   font-family: "Ubuntu", sans-serif;
   font-size: 1em;
+  color: white;
+  background-color: #537961;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -20,131 +24,128 @@ body:after {
   clear: both;
 }
 
-/* line 17, sass/_partial.scss */
-a {
-  text-decoration: none;
-  color: #fff;
+/* line 2, sass/_partial.scss */
+section:after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 /* line 21, sass/_partial.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 24, sass/_partial.scss */
 a:hover {
   color: red;
 }
 
-/* line 26, sass/_partial.scss */
+/* line 28, sass/_partial.scss */
+h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+/* line 32, sass/_partial.scss */
 .center {
   text-align: center;
 }
 
-/* line 28, sass/_partial.scss */
+/* line 34, sass/_partial.scss */
 .center i {
-  font-size: 44px;
+  font-size: 5rem;
 }
 
-/* line 33, sass/_partial.scss */
+/* line 39, sass/_partial.scss */
 header {
   margin-top: 0;
   background-color: #688675;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 100%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
 
-/* line 40, sass/_partial.scss */
+/* line 45, sass/_partial.scss */
 ul {
   height: 100px;
 }
 
-/* line 44, sass/_partial.scss */
+/* line 49, sass/_partial.scss */
 li.menu-item {
-  list-style-type: none;
-  vertical-align: middle;
-  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 100px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  text-transform: uppercase;
+  vertical-align: middle;
+  list-style-type: none;
   width: 20%;
   float: left;
   padding-left: 2%;
   padding-right: 2%;
 }
 
-/* line 55, sass/_partial.scss */
+/* line 58, sass/_partial.scss */
 li.menu-item a {
   display: inline-block;
   padding: 0 50px;
-  border-radius: 30px;
   background-color: #2e2e2e;
+  border-radius: 30px;
 }
 
-/* line 62, sass/_partial.scss */
+/* line 63, sass/_partial.scss */
 li.menu-item a:hover {
   background-color: #000;
-}
-
-/* line 68, sass/_partial.scss */
-.box {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
+  -webkit-transition: all ease-in 2s;
+  transition: all ease-in 2s;
 }
 
 /* line 71, sass/_partial.scss */
-aside {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 41.66667%;
+.box {
+  width: 33.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
 
 /* line 74, sass/_partial.scss */
+aside {
+  width: 41.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+
+/* line 77, sass/_partial.scss */
 .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
   background: #fff;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 16.66667%;
   float: right;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
 
-/* line 84, sass/_partial.scss */
+/* line 85, sass/_partial.scss */
 .sidebar li {
   list-style-type: none;
 }
 
-/* line 89, sass/_partial.scss */
+/* line 90, sass/_partial.scss */
 .gallery img {
   margin-bottom: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 33.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
 
-/* line 95, sass/_partial.scss */
+/* line 96, sass/_partial.scss */
 .verte {
   cursor: pointer;
   background-color: #fff;
@@ -162,9 +163,6 @@ aside {
 
 /* line 109, sass/_partial.scss */
 footer {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 100%;
   float: left;
   padding-left: 0.83333%;
