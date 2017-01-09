@@ -1,0 +1,20 @@
+{
+  "name": "new-project",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "zalemmm <zalemmm@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}

@@ -1,5 +1,13 @@
-/* Screen*/
-/* ======*/
-@import '../bourbon/bourbon';
-@import 'grids';
+@import 'susy';
+$susy: (
+  columns: 12,
+  gutters: 1 / 4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu');
+$base-font: 'Ubuntu', sans-serif;
+
 @import 'partial';

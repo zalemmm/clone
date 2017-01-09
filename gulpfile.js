@@ -1,39 +1,54 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var postcss = require('gulp-postcss');
-var imagemin = require('gulp-imagemin');
+var gulp        = require( 'gulp' );
+var sass        = require( 'gulp-sass' );
+var sourcemaps  = require( 'gulp-sourcemaps' );
+var postcss     = require( 'gulp-postcss' );
+var imagemin    = require( 'gulp-imagemin' );
+var browserSync = require( 'browser-sync' ).create();
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass({
+// Paths
+
+var susy = './node_modules/susy/sass';
+
+// Start browserSync & watch css & html changes
+
+gulp.task( 'watch', ['sass'], function() {
+    browserSync.init({
+        server: './'
+    });
+    gulp.watch( './sass/**/*.scss', ['sass']);
+    gulp.watch( '*.html' ).on( 'change', browserSync.reload );
+});
+
+gulp.task( 'sass', function() {
+    return gulp.src( './sass/**/*.scss' )
+        .pipe( sourcemaps.init() )
+        .pipe( sass({
+            includePaths: [susy],
             sourceComments: true,
-            outputStyle: 'expanded',
-        }).on('error', sass.logError))
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./css'));
+            outputStyle: 'expanded'
+        }).on( 'error', sass.logError ) )
+        .pipe( sourcemaps.write( './maps' ) )
+        .pipe( gulp.dest( './css' ) )
+        .pipe( browserSync.stream() );
 });
 
-gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+// Minify
+
+gulp.task( 'css', function() {
+    var processors = [
+        require( 'css-mqpacker' )
+    ];
+    return gulp.src( './css/*.css' )
+        .pipe( postcss( processors ) )
+        .pipe( gulp.dest( './css' ) );
 });
 
-gulp.task('css', function () {
-  var processors = [
-    //require('autoprefixer'),
-    require('css-mqpacker'),
-    //require('cssnano'),
-  ];
-  return gulp.src('./css/*.css')
-    .pipe(postcss(processors))
-    .pipe(gulp.dest('./css'));
+// Compress images
+
+gulp.task( 'imagemin', function() {
+    return gulp.src( './img/**/*.+(png|jpg|jpeg|gif)' )
+        .pipe( imagemin() )
+        .pipe( gulp.dest( './img/optimized' ) );
 });
 
-gulp.task('imagemin', function() {
-  return gulp.src('./img/**/*.+(png|jpg|jpeg|gif)')
-  .pipe(imagemin())
-  .pipe(gulp.dest('./img/optimized'))
-});
-
-gulp.task('default', ['sass', 'sass:watch']);
+gulp.task( 'default', ['watch']);
