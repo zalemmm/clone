@@ -1,3 +1,38 @@
 @import 'susy';
 @import 'variables';
 @import 'layout';
+@import 'header';
+
+body {
+  font-family: $base-font;
+  font-size: 1em;
+  color: lighten($color-text, 10%);
+  background-color: $color-bg;
+}
+
+a {
+  color: $color-2;
+  text-decoration: none;
+  &:hover {
+    color: $color-1;
+  }
+}
+li {
+  list-style-type: none;
+}
+h1 {
+  font-size: 2.2rem;
+  color: $color-1;
+  text-transform: uppercase;
+}
+.center {
+  text-align: center;
+  i {
+    font-size: 5rem;
+  }
+}
+.sidebar-menu-item a {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}

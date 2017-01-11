@@ -15,6 +15,10 @@ $mobile: 22.5rem;
 $tablet: 48rem;
 $desktop: 60rem;
 $widescreen: 85rem;
+$color-bg: #303030;
+$color-text: #5e5e5e;
+$color-1: #46694e;
+$color-2: #8f5647;
 
 @mixin clear {
   &:after {

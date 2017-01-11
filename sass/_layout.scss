@@ -1,68 +1,18 @@
-
-
-
 body {
-  font-family: $base-font;
-  font-size: 1em;
-  color: white;
-  background-color: rgb(83, 121, 97);
-
   @include container(100%);
+}
+header {
+  @include clear;
+  .logo {
+    @include span(2);
+  }
+  nav {
+    @include span(10);
+  }
 }
 
 section {
   @include clear;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-  &:hover {
-    color: red;
-  }
-}
-
-h1 {
-  font-size: 2.2rem;
-  text-transform: uppercase;
-}
-.center {
-  text-align: center;
-  i {
-    font-size: 5rem;
-  }
-}
-
-header {
-  margin-top: 0;
-  background-color: #688675;
-
-  @include span(full);
-}
-ul {
-  height: 100px;
-}
-
-li.menu-item {
-  font-size: 1.2rem;
-  font-weight: bold;
-  line-height: 100px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  list-style-type: none;
-
-  @include span(1 of 5);
-  a {
-    display: inline-block;
-    padding: 0 50px;
-    background-color: rgb(46, 46, 46);
-    border-radius: 30px;
-    &:hover {
-      background-color: #000;
-      -webkit-transition: all ease-in 2s;
-              transition: all ease-in 2s;
-    }
-  }
 }
 
 .box {
@@ -74,35 +24,13 @@ aside {
 }
 
 .sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  background: #fff;
-
   @include span(2 last);
-  li {
-    list-style-type: none;
-  }
 }
 
 .gallery img {
   margin-bottom: 20px;
 
   @include span(4);
-}
-
-.verte {
-  cursor: pointer;
-  background-color: #fff;
-}
-
-.bleu {
-  background-color: blue;
-}
-
-.box li {
-  color: black;
 }
 
 footer {
