@@ -1,10 +1,5 @@
-@mixin clear {
-  &:after {
-    display: table;
-    clear: both;
-    content: "";
-  }
-}
+
+
 
 body {
   font-family: $base-font;
@@ -18,6 +13,7 @@ body {
 section {
   @include clear;
 }
+
 a {
   color: #fff;
   text-decoration: none;
@@ -25,6 +21,7 @@ a {
     color: red;
   }
 }
+
 h1 {
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -71,9 +68,11 @@ li.menu-item {
 .box {
   @include span(4);
 }
+
 aside {
   @include span(5);
 }
+
 .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* line 9, sass/_partial.scss */
+/* line 4, sass/_layout.scss */
 body {
   font-family: "Ubuntu", sans-serif;
   font-size: 1em;
@@ -24,41 +24,41 @@ body:after {
   clear: both;
 }
 
-/* line 2, sass/_partial.scss */
+/* line 20, sass/_variables.scss */
 section:after {
   display: table;
   clear: both;
   content: "";
 }
 
-/* line 21, sass/_partial.scss */
+/* line 17, sass/_layout.scss */
 a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 24, sass/_partial.scss */
+/* line 20, sass/_layout.scss */
 a:hover {
   color: red;
 }
 
-/* line 28, sass/_partial.scss */
+/* line 25, sass/_layout.scss */
 h1 {
   font-size: 2.2rem;
   text-transform: uppercase;
 }
 
-/* line 32, sass/_partial.scss */
+/* line 29, sass/_layout.scss */
 .center {
   text-align: center;
 }
 
-/* line 34, sass/_partial.scss */
+/* line 31, sass/_layout.scss */
 .center i {
   font-size: 5rem;
 }
 
-/* line 39, sass/_partial.scss */
+/* line 36, sass/_layout.scss */
 header {
   margin-top: 0;
   background-color: #688675;
@@ -68,12 +68,12 @@ header {
   padding-right: 0.83333%;
 }
 
-/* line 45, sass/_partial.scss */
+/* line 42, sass/_layout.scss */
 ul {
   height: 100px;
 }
 
-/* line 49, sass/_partial.scss */
+/* line 46, sass/_layout.scss */
 li.menu-item {
   font-size: 1.2rem;
   font-weight: bold;
@@ -87,7 +87,7 @@ li.menu-item {
   padding-right: 2%;
 }
 
-/* line 58, sass/_partial.scss */
+/* line 55, sass/_layout.scss */
 li.menu-item a {
   display: inline-block;
   padding: 0 50px;
@@ -95,14 +95,14 @@ li.menu-item a {
   border-radius: 30px;
 }
 
-/* line 63, sass/_partial.scss */
+/* line 60, sass/_layout.scss */
 li.menu-item a:hover {
   background-color: #000;
   -webkit-transition: all ease-in 2s;
   transition: all ease-in 2s;
 }
 
-/* line 71, sass/_partial.scss */
+/* line 68, sass/_layout.scss */
 .box {
   width: 33.33333%;
   float: left;
@@ -110,7 +110,7 @@ li.menu-item a:hover {
   padding-right: 0.83333%;
 }
 
-/* line 74, sass/_partial.scss */
+/* line 72, sass/_layout.scss */
 aside {
   width: 41.66667%;
   float: left;
@@ -118,7 +118,7 @@ aside {
   padding-right: 0.83333%;
 }
 
-/* line 77, sass/_partial.scss */
+/* line 76, sass/_layout.scss */
 .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,12 +131,12 @@ aside {
   padding-right: 0.83333%;
 }
 
-/* line 85, sass/_partial.scss */
+/* line 84, sass/_layout.scss */
 .sidebar li {
   list-style-type: none;
 }
 
-/* line 90, sass/_partial.scss */
+/* line 89, sass/_layout.scss */
 .gallery img {
   margin-bottom: 20px;
   width: 33.33333%;
@@ -145,23 +145,23 @@ aside {
   padding-right: 0.83333%;
 }
 
-/* line 96, sass/_partial.scss */
+/* line 95, sass/_layout.scss */
 .verte {
   cursor: pointer;
   background-color: #fff;
 }
 
-/* line 101, sass/_partial.scss */
+/* line 100, sass/_layout.scss */
 .bleu {
   background-color: blue;
 }
 
-/* line 105, sass/_partial.scss */
+/* line 104, sass/_layout.scss */
 .box li {
   color: black;
 }
 
-/* line 109, sass/_partial.scss */
+/* line 108, sass/_layout.scss */
 footer {
   width: 100%;
   float: left;

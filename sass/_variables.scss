@@ -1,0 +1,25 @@
+$susy: (
+  columns: 12,
+  gutters: 1 / 4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  global-box-sizing: border-box,
+  use-custom: (rem: true)
+);
+
+@include border-box-sizing;
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu');
+$base-font: 'Ubuntu', sans-serif;
+$mobile: 22.5rem;
+$tablet: 48rem;
+$desktop: 60rem;
+$widescreen: 85rem;
+
+@mixin clear {
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
