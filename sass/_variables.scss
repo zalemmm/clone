@@ -11,12 +11,16 @@ $susy: (
 @include border-box-sizing;
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu');
 $base-font: 'Ubuntu', sans-serif;
+
+// breakpoints
 $mobile: 22.5rem;
 $tablet: 48rem;
 $desktop: 60rem;
 $widescreen: 85rem;
+
+// colors
 $color-bg: #303030;
-$color-text: #5e5e5e;
+$color-text: #757474;
 $color-1: #46694e;
 $color-2: #8f5647;
 
@@ -24,6 +28,6 @@ $color-2: #8f5647;
   &:after {
     display: table;
     clear: both;
-    content: "";
+    content: '';
   }
 }

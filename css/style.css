@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu");
 /* line 21, node_modules/susy/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -20,14 +18,14 @@ body:after {
   clear: both;
 }
 
-/* line 24, sass/_variables.scss */
+/* line 28, sass/_variables.scss */
 header:after {
   display: table;
   clear: both;
-  content: "";
+  content: '';
 }
 
-/* line 6, sass/_layout.scss */
+/* line 8, sass/_layout.scss */
 header .logo {
   width: 16.66667%;
   float: left;
@@ -35,7 +33,7 @@ header .logo {
   padding-right: 0.83333%;
 }
 
-/* line 9, sass/_layout.scss */
+/* line 12, sass/_layout.scss */
 header nav {
   width: 83.33333%;
   float: left;
@@ -43,14 +41,22 @@ header nav {
   padding-right: 0.83333%;
 }
 
-/* line 24, sass/_variables.scss */
+/* line 15, sass/_layout.scss */
+header nav li {
+  width: 20%;
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/* line 28, sass/_variables.scss */
 section:after {
   display: table;
   clear: both;
-  content: "";
+  content: '';
 }
 
-/* line 18, sass/_layout.scss */
+/* line 25, sass/_layout.scss */
 .box {
   width: 33.33333%;
   float: left;
@@ -58,7 +64,7 @@ section:after {
   padding-right: 0.83333%;
 }
 
-/* line 22, sass/_layout.scss */
+/* line 29, sass/_layout.scss */
 aside {
   width: 41.66667%;
   float: left;
@@ -66,7 +72,7 @@ aside {
   padding-right: 0.83333%;
 }
 
-/* line 26, sass/_layout.scss */
+/* line 33, sass/_layout.scss */
 .sidebar {
   width: 16.66667%;
   float: right;
@@ -74,7 +80,7 @@ aside {
   padding-right: 0.83333%;
 }
 
-/* line 30, sass/_layout.scss */
+/* line 38, sass/_layout.scss */
 .gallery img {
   margin-bottom: 20px;
   width: 33.33333%;
@@ -83,7 +89,7 @@ aside {
   padding-right: 0.83333%;
 }
 
-/* line 36, sass/_layout.scss */
+/* line 45, sass/_layout.scss */
 footer {
   width: 100%;
   float: left;
@@ -91,92 +97,169 @@ footer {
   padding-right: 0.83333%;
 }
 
+@media (max-width: 22.5rem) {
+  /* line 28, sass/_variables.scss */
+  header:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+  /* line 53, sass/_layout.scss */
+  header .logo {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 57, sass/_layout.scss */
+  header nav {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 60, sass/_layout.scss */
+  header nav li {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 28, sass/_variables.scss */
+  section:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+  /* line 70, sass/_layout.scss */
+  .box {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 74, sass/_layout.scss */
+  aside {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 78, sass/_layout.scss */
+  .sidebar {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 83, sass/_layout.scss */
+  .gallery img {
+    margin-bottom: 20px;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
 /* line 1, sass/_header.scss */
 header {
   background-color: #2b2b2b;
 }
 
-/* line 4, sass/_header.scss */
+/* line 5, sass/_header.scss */
 ul {
   height: 3rem;
   vertical-align: middle;
 }
 
-/* line 9, sass/_header.scss */
-li.menu-item {
+/* line 12, sass/_header.scss */
+.menu-item {
+  vertical-align: bottom;
+  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 3rem;
-  text-transform: uppercase;
-  vertical-align: bottom;
-  width: 20%;
-  float: left;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 
-/* line 17, sass/_header.scss */
-li.menu-item a {
+/* line 18, sass/_header.scss */
+.menu-item a {
   display: inline-block;
+  max-width: 100%;
   padding: 0 3rem;
-  color: #919191;
-  background-color: #46694e;
+  color: #a8a7a7;
   border-radius: 30px;
+  background-color: #46694e;
 }
 
-/* line 23, sass/_header.scss */
-li.menu-item a:hover {
+/* line 26, sass/_header.scss */
+.menu-item a:hover {
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+  color: #a8a7a7;
   background-color: #8f5647;
-  -webkit-transition: all ease-in 2s;
-  transition: all ease-in 2s;
 }
 
 /* line 6, sass/style.scss */
 body {
+  color: #8e8e8e;
+  background-color: #303030;
   font-family: "Ubuntu", sans-serif;
   font-size: 1em;
-  color: #787878;
-  background-color: #303030;
 }
 
 /* line 13, sass/style.scss */
 a {
-  color: #8f5647;
   text-decoration: none;
+  color: #8f5647;
 }
 
-/* line 16, sass/style.scss */
+/* line 17, sass/style.scss */
 a:hover {
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
   color: #46694e;
 }
 
-/* line 20, sass/style.scss */
+/* line 23, sass/style.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 28, sass/style.scss */
 li {
   list-style-type: none;
 }
 
-/* line 23, sass/style.scss */
+/* line 32, sass/style.scss */
 h1 {
-  font-size: 2.2rem;
-  color: #46694e;
   text-transform: uppercase;
+  color: #46694e;
+  font-size: 2.2rem;
 }
 
-/* line 28, sass/style.scss */
+/* line 38, sass/style.scss */
+h2 {
+  font-size: 1.75rem;
+  /* 28/16 */
+}
+
+/* line 42, sass/style.scss */
 .center {
   text-align: center;
 }
 
-/* line 30, sass/style.scss */
+/* line 45, sass/style.scss */
 .center i {
   font-size: 5rem;
 }
 
-/* line 34, sass/style.scss */
+/* line 51, sass/style.scss */
 .sidebar-menu-item a {
+  text-transform: uppercase;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

@@ -1,29 +1,33 @@
 header {
   background-color: darken($color-bg, 2%);
 }
+
 ul {
   height: 3rem;
   vertical-align: middle;
 }
 
-li.menu-item {
+// test
+
+.menu-item {
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 3rem;
-  text-transform: uppercase;
   vertical-align: bottom;
+  text-transform: uppercase;
 
-  @include span(1 of 5);;
   a {
     display: inline-block;
+    max-width: 100%;
     padding: 0 3rem;
     color: lighten($color-text, 20%);
-    background-color: $color-1;
     border-radius: 30px;
+    background-color: $color-1;
+
     &:hover {
+      transition: all ease-in 0.5s;
+      color: lighten($color-text, 20%);
       background-color: $color-2;
-      -webkit-transition: all ease-in 2s;
-              transition: all ease-in 2s;
     }
   }
 }

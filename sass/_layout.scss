@@ -1,13 +1,20 @@
 body {
   @include container(100%);
 }
+
 header {
   @include clear;
+
   .logo {
     @include span(2);
   }
+
   nav {
     @include span(10);
+
+    li {
+      @include span(1 of 5);
+    }
   }
 }
 
@@ -27,12 +34,54 @@ aside {
   @include span(2 last);
 }
 
-.gallery img {
-  margin-bottom: 20px;
-
-  @include span(4);
+.gallery {
+  img {
+    @include span(4);
+    margin-bottom: 20px;
+  }
 }
 
 footer {
   @include span(full);
+}
+
+@media(max-width: $mobile) {
+  header {
+    @include clear;
+
+    .logo {
+      @include span(6);
+    }
+
+    nav {
+      @include span(6);
+
+      li {
+        @include span(12);
+      }
+    }
+  }
+
+  section {
+    @include clear;
+  }
+
+  .box {
+    @include span(12);
+  }
+
+  aside {
+    @include span(12);
+  }
+
+  .sidebar {
+    @include span(12);
+  }
+
+  .gallery {
+    img {
+      @include span(6);
+      margin-bottom: 20px;
+    }
+  }
 }

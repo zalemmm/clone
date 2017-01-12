@@ -4,35 +4,54 @@
 @import 'header';
 
 body {
-  font-family: $base-font;
-  font-size: 1em;
   color: lighten($color-text, 10%);
   background-color: $color-bg;
+  font-family: $base-font;
+  font-size: 1em;
 }
 
 a {
-  color: $color-2;
   text-decoration: none;
+  color: $color-2;
+
   &:hover {
+    transition: all ease-in 0.5s;
     color: $color-1;
   }
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 li {
   list-style-type: none;
 }
+
 h1 {
-  font-size: 2.2rem;
-  color: $color-1;
   text-transform: uppercase;
+  color: $color-1;
+  font-size: 2.2rem;
 }
+
+h2 {
+  font-size: 1.75rem;
+  /* 28/16 */
+}
+
 .center {
   text-align: center;
+
   i {
     font-size: 5rem;
   }
 }
-.sidebar-menu-item a {
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  text-transform: uppercase;
+
+.sidebar-menu-item {
+  a {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
 }
